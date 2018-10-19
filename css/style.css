@@ -1,0 +1,15 @@
+.header {
+  background-color: #3F69AA;
+  overflow: hidden;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  color: #E8E8EE;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #3F69AA;
+    overflow: hidden;
+    padding: 15px 10px;
+    color: #E8E8EE;
+}
