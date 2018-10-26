@@ -4,45 +4,86 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="utf-8">
-	<title> Project Requirements P1 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Wallpaper & Ipsum </title>
 </head>
 
-<body onload="load_footer()">
-	<div class="header">
+<body><!-- onload="load_footer()"-->
+<!-------------------------------------------------------------------------->
+<!-- HEADER START-->
+<!-------------------------------------------------------------------------->
+	<div class="header" id="header">
+	<div class="header-drop">
 		<a href="index.html">
-		<img src="img/logo.png" alt="logo" />
+		<img src="img/logo.png" alt="logo" class="logo" />
 	</a>
-	<div class="navbar">
+<!-- NAVBAR START -->
+	<div class="navbar" id="myNavbar">
 		<ul>
-  	<li><a class="active" href="index.html">Forsiden</a></li>
-  	<li><a href="pages/produkter.html">Produkter</a></li>
-  	<li><a href="leverandor.html">Leverandør</a></li>
-  	<li><a href="nyheter.html">Nyheter</a></li>
-		<li><a href="omoss.html">Om oss</a></li>
+		<li><a href="index.html" class="navbarlogo">
+			<img src="img/logo.png" alt="logo" class="logo" />
+		</a></li>
+		<li><a href="javascript:void(0);" class="hamburgericon" onclick="navbar()">
+			<i class="fa fa-bars"></i></a></li>
 		<li><a href="kontakt.html">Kontakt</a></li>
+		<li><a href="omoss.html">Om oss</a></li>
+		<li><a href="nyheter.html">Nyheter</a></li>
+		<li><a href="leverandor.html">Leverandør</a></li>
+		<li><a href="pages/produkter.html">Produkter</a></li>
+		<li><a class="active" href="index.html">Hjem</a></li>
+
 
 	</ul>
 </div>
+</div>
+<!-- NAVBAR END -->
 	</div>
-
-
-	<div><link rel="import" href="reusablefooter.html"></div>
+<!--HEADER END-->
+<!-------------------------------------------------------------------------->
+<!-- CENTER SECTION START-->
+<!-------------------------------------------------------------------------->
 	<div class="slideshow">
 
 	</div>
 	<section>
+			<div class="container">
 			<h1>Importør av tapeter, tekstiler, tepper og puter! </h1>
-	</section>
+			<p>Lorem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf
+			orem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf</p>
+			<h1>Importør av tapeter, tekstiler, tepper og puter! </h1>
+			<p>Lorem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf
+			orem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf</p>
 
+			<h1>Importør av tapeter, tekstiler, tepper og puter! </h1>
+		<p>Lorem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf
+		orem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf</p>
+
+	<h1>Importør av tapeter, tekstiler, tepper og puter! </h1>
+	<p>Lorem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf
+	orem ipsum adospfdskfbgjiadsfvjn Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf Lorem ipsum adospfdskf</p>
+</div>
+		</div>
+	</section>
+<!-------------------------------------------------------------------------->
+<!-- FOOTER START -->
+<!-------------------------------------------------------------------------->
 	<footer>
 		<div id="footer">
+			<div class='footerLeft'>
+
+		  	<ul><h4>Siste nytt:</h4><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul>
+				<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul>
+
+			</div>
+
 		</div>
 	</footer>
+	<!--FOOTER END-->
 <!-- JAVASCRIPT -->
 	<script src="js/reusablefooter.js">
 	</script>
-
+	<script src="js/myScript.js"></script>
 </body>
-
 </html>
