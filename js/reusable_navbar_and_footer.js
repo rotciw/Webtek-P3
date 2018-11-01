@@ -20,13 +20,6 @@ window.onload = function load_navbar_and_footer () {
   "<li><a href='index.html'>Hjem</a></li>"+
   "</ul>";
 
-      let locationArray = window.location.href.split("/")
-      let location = locationArray[locationArray.length - 1]
-      let element = document.querySelector("a[href='"+location+"']")
-      element.classList.add('active')
-
-
-
 
   let locationArray = window.location.href.split('/')
   let location = locationArray[locationArray.length - 1]
