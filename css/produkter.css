@@ -5,6 +5,7 @@
 .productThumb {
   display: inline-block;
   margin: 10px !important;
+  max-width: 60%;
 }
 
 .products {
