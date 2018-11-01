@@ -1,10 +1,10 @@
-window.onload = function load_navbar_and_footer() {
-  document.getElementById('footer').innerHTML=
-  "<div class='footerLeft'><h4> Siste Nytt: </h4>"+
-  "<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul></div>"+
-  "<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul>";
+window.onload = function load_navbar_and_footer () {
+  document.getElementById('footer').innerHTML =
+    "<div class='footerLeft'><h4> Siste Nytt: </h4>" +
+    '<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul></div>' +
+    '<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul>'
 
-  //NAVBAR
+  // NAVBAR
   document.getElementById('myNavbar').innerHTML =
   "<ul>" +
   "<li><a class='navbarlogo'>"+
@@ -27,4 +27,9 @@ window.onload = function load_navbar_and_footer() {
 
 
 
+
+  let locationArray = window.location.href.split('/')
+  let location = locationArray[locationArray.length - 1]
+  let element = document.querySelector("a[href='" + location + "']")
+  element.classList.add('active')
 }
