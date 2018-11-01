@@ -1,16 +1,16 @@
 .thumb {
-  width: 150px;
+  width: 200px;
 }
 
 .productThumb {
   display: inline-block;
-  margin: 10px !important;
+  margin: 20px !important;
   max-width: 60%;
 }
 
 .products {
   text-align: center;
   margin-left: 50%;
-  width: 100%;
+  width: 60%;
   transform: translateX(-50%);
 }
