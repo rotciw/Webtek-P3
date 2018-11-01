@@ -1,0 +1,15 @@
+.thumb {
+  width: 150px;
+}
+
+.productThumb {
+  display: inline-block;
+  margin: 10px !important;
+}
+
+.products {
+  text-align: center;
+  margin-left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
