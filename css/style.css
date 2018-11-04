@@ -145,7 +145,6 @@ body {
   width: 60%; /*Resulting in 20% on the right as well*/
   text-align: center;
   float: center;
-
 }
 
 section p {
@@ -242,6 +241,62 @@ overflow: hidden;
   width: 100%;
   object-fit: cover;
 }
+
+/*Parallax effect*/
+.parallax-products {
+  /* The image used */
+   background-image: url('../img/products/sofapute4.jpg');
+   width: 100%;
+   /* Full height */
+   height: 200px;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+   font-size: 5em;
+   text-align: center;
+   line-height: 200px;
+   margin-top: 50px;
+}
+
+.parallax-supplier {
+  /* The image used */
+   background-image: url('../img/products/seng.jpg');
+   width: 100%;
+   /* Full height */
+   height: 200px;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+   font-size: 5em;
+   text-align: center;
+   line-height: 200px;
+   margin-top: 50px;
+}
+
+.parallax-layer {
+  background-color: rgba(50, 50, 50, 0.5);
+  height: 100%;
+}
+
+.parallax-text {
+
+  margin-left: 20%; /*20% from the left*/
+  width: 60%; /*Resulting in 20% on the right as well*/
+  text-align: center;
+  float: center;
+}
+
+
 
 /*BOTTOM SECTION
 -------------------------------------------------------*/
