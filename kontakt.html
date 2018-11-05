@@ -8,7 +8,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Wallpaper & Ipsum </title>
-
+	<style>
+	ul{
+	list-style-type: none;
+	}
+	</style>
 </head>
 
 <body>
@@ -39,37 +43,113 @@
 		</h1>
 
 			<h1>Kontaktinformasjon</h1>
-			<p>Vi er her for å hjelpe deg. Her kan du kontakte Wallpapers and Ipsum og bestille produkter,
-			og eventuelt stille spørsmål som dei måtte ha.
+			<p>Vi er her for å hjelpe deg. Her kan du kontakte Wallpapers and Ipsum, bestille produkter
+			og eventuelt stille spørsmål som de måtte ha.
 
-			Vi har svart på de fleste spørsmål i FAQ i OM OSS(Legg til link)
+			Vi har svart på de fleste spørsmål under <a href='omoss.html#exactline'>ofte stilte spørsmål</a>.
 		</p>
-			<p>
-			Vi holder til i fine lokarer i Kongens Kongens gate (LEGG TIL GOOGE MAPS).
-				epost:Lorem@inc.com
-				telefon:88800888
-			</p>
+			<h4>
+			Gjerne ta kontakt med oss!</h4>
+		<ul>
+			<li>Epost: Lorem@inc.com</li>
+				<li>Telefon: 88800888</li>
+				<li>Adresse: </li>
+					<li>Kongens Kongens gate 1</li>
+				<li>7030 Trondheim</li>
+			</ul>
 
 			<h2>Google maps</h2>
-			<p>fungerer ikke 100% fordi at det mangler MYKEY  i javascript nederst,
+			<p>Fungerer ikke 100% fordi at det mangler MYKEY  i javascript nederst,
 				som er en api key som man må få rettigheter til fra google,
 			(ved å bruke deres tjenester som en ekte bedrift)</p>
 			<div id="map" style="width:100%;height:200px;"></div>
 
-
-				<h3>Form bestillinger</h3>
-				<p>Formen for bestillinger må ha med hvem, kontaktinfo,
-				 hvor det skal leveres, produkter og kvantitet,
-				 evt hvor mye totalprisen blir.
-				 	</p>
-					<h3>Hva kan vi hjelpe deg med? </h3>
-				 	<h3>Form epost/Spørsmål</h3>
-				 <p> Formen for spørsmål må ha med kontaktinfo og selve spørsmålet
-					og hvilken kategori spørsmålet tilhører.
+					<h1 id='title'></h1>
+			        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="taxform">
+			          <h2>Form Bestillinger</h2>
+								<h3>Her kan du bestille produkter!</h3>
+					<p>
+			   <label for="name"><b>Fullt Navn:</b></label><br>
+			   <input type="text" name="name" id="name" placeholder="eks. Ola Nordmann" required>
+			 </p>
+			 <p>
+			   <label for="email"><b>E-post:</b></label><br>
+			   <input type="email" name="email" id="email" placeholder="eks. Ola@Nordmann.no" required>
+			 </p>
+			 <p>
+		 		 <label for="mobil"><b>Telefon:</b></label><br>
+		 		 <input type="text" name="mobil"   minlength="8" maxlength="8" size="10" required>
+			 </p>
+			 <p>
+				<label for="adresse"><b>Adresse:</b></label><br>
+				<input type="text" name="adresse" id="adresse" placeholder="eks. Kongens gate 1" required>
+			</p>
+		 <p>
+				<label for="postnr"><b>Postnummer:</b></label><br>
+				<input type="text" name="postnr" maxlength="4" size="10" placeholder="eks. 7030" required>
+			</p>
+		 <p>
+				<label for="by"><b>By:</b></label><br>
+				<input type="text" name="by" id="by" placeholder="eks. Trondheim" required>
+			</p>
+		 <p>
+			   <label for="levering"><b>Levering av produktene:</b></label><br>
+				 <input type="radio" name="levering" value="sende" required> Pakken sendes til min adresse<br>
+				 <input type="radio" name="levering" value="hente"> Jeg skal hente pakken<br>
+			 </p>
+			 <p>
+				<label for="produkt"><b>Produkt:</b></label><br>
+				<input type="text" name="prid" id="prod">
+			</p>
+		 <p>
+			  <label for="antall"><b>Antall:</b></label><br>
+			  <input type="number" name="antall" min="1" max="100" onkeyup="getTax()" required>
 			</p>
 
+
+			<!-- Herfra bare for hvis vi skal Regne pris på produktene -->
+
+		<p>
+			   <label for="wealth"><b>Pris på produktet?:</b></label><br>
+			   <input type="number" name="wealth" id="wealth" min="0" onkeyup="getTax()" required>
+			 </p>
+			 <p>
+
+			   <label for="total"><b>Totalpris:</b></label><br>
+			   <input type="number" name="total" disabled id="total">
+			 </p>
+			    <input type="submit" value="Send bestilling">
+			    </form>
+
+
+<h3>Still oss et spørsmål</h3>
+
+			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+
+<p>
+			Navn:<br>
+			<input type="text" name="name"><br>
+</p>
+<p>
+			E-post adresse:<br>
+			<input type="text" name="mail"><br>
+</p>
+<p>
+			Angående:<br>
+			<input type="radio" name="kategori" value="bestill"> Bestilling<br>
+			<input type="radio" name="kategori" value="prod"> Produkter<br>
+			<input type="radio" name="kategori" value="service"> Service<br>
+			<input type="radio" name="kategori" value="annet"> Annet<br>
+	</p>
+			<p>
+			Hva lurer du på?<br>
+			<input type="text" name="comment" size="100px" ><br><br>
+			</p>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+</form>
+
 </div>
-		</div>
 	</section>
 <!-------------------------------------------------------------------------->
 <!-- FOOTER START -->

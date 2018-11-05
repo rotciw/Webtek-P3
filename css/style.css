@@ -96,9 +96,7 @@ body {
     display: block;
   }
 
-  .prev,
-  .next {
-  }
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -142,6 +140,7 @@ body {
 .container {
   margin-top: 3%;
   margin-left: 20%; /*20% from the left*/
+
   width: 60%; /*Resulting in 20% on the right as well*/
   text-align: center;
   float: center;
@@ -150,35 +149,6 @@ body {
 section p {
   text-align: left;
   word-wrap: break-word;
-}
-/*BOTTOM SECTION
--------------------------------------------------------*/
-footer {
-  background-color: #87aa47;
-  overflow: hidden;
-  color: #e8e8ee;
-  width: 100%;
-  height: 10em;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 30px;
-  -webkit-box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.3);
-  margin-top: 3em;
-}
-
-.footerLeft {
-  margin-left: 20%;
-  overflow: hidden;
-}
-
-.footerLeft ul {
-  display: inline-block;
-}
-
-.footerCenter {
-  margin-left: 40%;
 }
 
 /* SLIDESHOW */
@@ -279,4 +249,260 @@ footer {
 .slideshow_pic {
   width: 100%;
   object-fit: cover;
+}
+
+/*Parallax effect*/
+.parallax-products {
+  /* The image used */
+   background-image: url('../img/products/sofapute4.jpg');
+   width: 100%;
+   /* Full height */
+   height: 200px;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+   font-size: 5em;
+   text-align: center;
+   line-height: 200px;
+   margin-top: 50px;
+}
+
+.parallax-supplier {
+  /* The image used */
+   background-image: url('../img/products/seng.jpg');
+   width: 100%;
+   /* Full height */
+   height: 200px;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+   font-size: 5em;
+   text-align: center;
+   line-height: 200px;
+   margin-top: 50px;
+}
+
+.parallax-layer {
+  background-color: rgba(50, 50, 50, 0.5);
+  height: 100%;
+}
+
+.parallax-text {
+
+  margin-left: 20%; /*20% from the left*/
+  width: 60%; /*Resulting in 20% on the right as well*/
+  text-align: center;
+  float: center;
+}
+
+
+
+/*BOTTOM SECTION
+-------------------------------------------------------*/
+footer {
+  background-color: #87aa47;
+  overflow: hidden;
+  color: #e8e8ee;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  height: 14em;
+}
+
+hr {
+  margin-top:15px;
+	border-top: 1px solid white;
+}
+
+.footer-company-name{
+	color:  white;
+	font-size: 16px;
+}
+
+.footer-left {
+  float:left;
+  margin-top:1%;
+  margin-left: 20%;
+  overflow: hidden;
+}
+
+.footer-contact{
+	font-weight: bold;
+  margin: 15px 42px 10px 0;
+
+}
+
+.footer-number-email {
+  font-weight: bold;
+  margin: 0px 96px 10px 0;
+  display: inline-block;
+
+}
+.footer-number-email-under {
+  margin: 0px 70px 10px 0;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.footer-right{
+  margin-top: 2%;
+  margin-right: 22%;
+	float: right;
+}
+
+.footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+
+footer form{
+	display: inline-block;
+}
+
+footer form input,
+footer form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  white;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  black;
+
+	width: 300px;
+	padding: 18px;
+}
+
+footer form input{
+	height: 55px;
+	margin-bottom: 12px;
+}
+
+footer form button{
+	border-radius: 3px;
+	background-color:  white;
+	color: black;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+  cursor:pointer;
+}
+
+footer form button:hover{
+	background-color:  #d1d2d2;
+}
+
+
+@media (max-width: 1600px) {
+
+  footer {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-company-name{
+		font-size: 12px;
+	}
+
+	footer form input,
+  footer form textarea{
+		width: 250px;
+	}
+
+	footer form button{
+		padding: 10px 35px;
+	}
+
+}
+@media (max-width: 1450px) {
+
+  footer {
+		font: bold 12px sans-serif;
+	}
+
+	.footer-company-name{
+		font-size: 10px;
+	}
+
+	footer form input,
+  footer form textarea{
+		width: 200px;
+	}
+
+	footer form button{
+		padding: 5px 25px;
+	}
+
+}
+@media (max-width: 1250px) {
+
+	footer{
+		padding: 30px;
+    height: 50%;
+    text-align: center;
+	}
+
+  footer .footer-left,
+	footer .footer-right{
+		float: none;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	footer .footer-left{
+		margin-bottom: 20px;
+	}
+
+  footer form{
+		margin-top: 30px;
+	}
+
+	footer form{
+		display: block;
+	}
+
+  footer form button{
+		margin-top: 15px ;
+    float: none;
+	}
+
+  footer form input {
+    margin: 0 auto;
+  }
+
+  hr {
+    margin-top: 30px;
+    width: 350px;
+  }
+
+  .footer-number-email {
+    margin: 0px 80px 0px 50px;
+
+  }
+  .footer-number-email-under {
+    margin: 0px 50px 0px 50px;
+  }
+
+  .footer-contact{
+    margin:40px 0px 0px 0;
+  }
 }
