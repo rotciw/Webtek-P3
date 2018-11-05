@@ -12,13 +12,12 @@ body {
   left: 0;
   top: 0;
   overflow: hidden;
-  width:100%;
-  height:5.5em;
-  -webkit-box-shadow:  0px 6px 15px rgba(0,0,0, 0.4);
-  -moz-box-shadow:  0px 6px 15px rgba(0,0,0, 0.4);
-  box-shadow: 0px 6px 15px rgba(0,0,0, 0.4);
+  width: 100%;
+  height: 5.5em;
+  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   z-index: 2;
-
 }
 
 .header img {
@@ -97,9 +96,8 @@ body {
     display: block;
   }
 
-  .prev, .next {
-
-
+  .prev,
+  .next {
   }
 }
 
@@ -183,13 +181,14 @@ footer {
   margin-left: 40%;
 }
 
-
 /* SLIDESHOW */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
-overflow: hidden;
+  overflow: hidden;
   /*max-width: 1000px;*/
   position: relative;
   margin: auto;
@@ -197,12 +196,12 @@ overflow: hidden;
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
-
+  display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   z-index: 0;
   cursor: pointer;
   position: absolute;
@@ -225,10 +224,10 @@ overflow: hidden;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(187, 187, 187, 0.8);
 }
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -242,7 +241,8 @@ overflow: hidden;
   transition: background-color 0.6s ease;
 }
 
- .current, .dot:hover {
+.current,
+.dot:hover {
   background-color: #87aa47;
 }
 
@@ -255,18 +255,26 @@ overflow: hidden;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .mySlides img {
-  height:500px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  height: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 .slideshow_pic {
   width: 100%;
