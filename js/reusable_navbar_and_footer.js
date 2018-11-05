@@ -1,8 +1,26 @@
 window.onload = function load_navbar_and_footer () {
+
+  // Footer
   document.getElementById('footer').innerHTML =
-    "<div class='footerLeft'><h4> Siste Nytt: </h4>" +
-    '<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul></div>' +
-    '<ul><li><a>Ny nettside</a><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li></ul>'
+    '<div class="footer-right">'+
+    '<p>Meld deg på nyhetsbrevet!</p>'+
+    '<form action="#" method="post">'+
+      '<input type="email" name="email" placeholder="Email" required />'+
+      '<button>Send</button>'+
+      '</form>'+
+    '</div>'+
+    '<div class="footer-left">'+
+      '<p class="footer-contact">Kontakt:</p>'+
+      '<p style="font-weight: normal">Lorem Ipsums vei 1, 7041 Trondheim</p>'+
+      '<p>'+
+      '<p class="footer-number-email">Telefon:</p>'+
+      '<p class="footer-number-email">Email:</p>'+
+      '<br>'+
+      '<p class="footer-number-email-under">42 42 42 42</p>'+
+      '<p class="footer-number-email-under">kontakt@lorem.no</p>'+
+      '<hr>'+
+    '<p class="footer-company-name">Wallpaper & Ipsum &copy; 2018</p>'+
+    '</div>';
 
   // NAVBAR
   document.getElementById('myNavbar').innerHTML =
