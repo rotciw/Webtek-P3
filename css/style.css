@@ -145,7 +145,7 @@ body {
 }
 
 section p {
-  text-align: center;
+  text-align: left;
   word-wrap: break-word;
 }
 
@@ -602,7 +602,7 @@ footer form button:hover {
   background: black;
 }
 
-@media screen and (max-width: 1585px) {
+@media screen and (max-width: 1335px) {
   .slideshow-container {
     margin-left: 50%;
     transform: translatex(-50%);
@@ -612,7 +612,9 @@ footer form button:hover {
     margin-left: 50%;
     transform: translatex(-50%);
   }
+}
 
+@media screen and (max-width: 1585px) {
   .slides-container {
     height: 225px;
   }
