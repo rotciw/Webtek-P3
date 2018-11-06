@@ -1,5 +1,5 @@
-.text {
-  text-align: left;
+p {
+  text-align: center !important;
 }
 
 .thumb {
@@ -17,4 +17,14 @@
   margin-left: 50%;
   width: 60%;
   transform: translateX(-50%);
+}
+
+.productLink:link {
+  text-decoration: none;
+  color: black;
+}
+
+.productLink:visited {
+  text-decoration: none;
+  color: black;
 }
