@@ -493,6 +493,23 @@ footer form button:hover {
 }
 
 /* Produkter */
+
+.back {
+  margin-top: 35px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+  padding: 8px 16px;
+  /*   background-color: #f1f1f1; */
+  color: black;
+}
+
+.pil {
+  width: 35px;
+}
+
 .produktText {
   text-align: center !important;
 }
