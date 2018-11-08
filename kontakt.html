@@ -75,58 +75,118 @@
 			        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="taxform">
 			          <h2>Form Bestillinger</h2>
 								<h3>Her kan du bestille produkter!</h3>
-					<p>
-			   <label for="name"><b>Fullt Navn:</b></label><br>
-			   <input type="text" name="name" id="name" placeholder="eks. Ola Nordmann" required>
-			 </p>
-			 <p>
-			   <label for="email"><b>E-post:</b></label><br>
-			   <input type="email" name="email" id="email" placeholder="eks. Ola@Nordmann.no" required>
-			 </p>
-			 <p>
-		 		 <label for="mobil"><b>Telefon:</b></label><br>
-		 		 <input type="text" name="mobil"   minlength="8" maxlength="8" size="10" required>
-			 </p>
-			 <p>
-				<label for="adresse"><b>Adresse:</b></label><br>
-				<input type="text" name="adresse" id="adresse" placeholder="eks. Kongens gate 1" required>
-			</p>
-		 <p>
-				<label for="postnr"><b>Postnummer:</b></label><br>
-				<input type="text" name="postnr" maxlength="4" size="10" placeholder="eks. 7030" required>
-			</p>
-		 <p>
-				<label for="by"><b>By:</b></label><br>
-				<input type="text" name="by" id="by" placeholder="eks. Trondheim" required>
-			</p>
-		 <p>
-			   <label for="levering"><b>Levering av produktene:</b></label><br>
-				 <input type="radio" name="levering" value="sende" required> Pakken sendes til min adresse<br>
-				 <input type="radio" name="levering" value="hente"> Jeg skal hente pakken<br>
-			 </p>
-			 <p>
-			 <label for="valgProdukt"><b>Velg produkt:</b></label><br>
-			 <input type="radio" name="produkt" value="pute"  required > Putetrekk<br>
-			 <input type="radio" name="produkt" value="pledd"> Pledd<br>
-			 <input type="radio" name="produkt" value="stol"> Stol<br>
-			 <input type="radio" name="produkt" value="sengetoy"> Sengetøy<br>
-		 	</p>
 
-			 <p>
-				<label for="produktPris"><b>Pris:</b></label><br>
-				<input type="number" name="antall" min="1" max="100" id="pris" onkeyup="getTotal()" required>
+			 <div class="row">
+					<div class="col-25">
+						<label for="email">Fullt Navn:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="name" id="name" placeholder="eks. Ola Nordmann" required>
+					</div>
+			 </div>
 
-			</p>
-		 <p>
-			  <label for="antall"><b>Antall:</b></label><br>
-			  <input type="number" name="antall" min="1" max="100" id="antall" onkeyup="getTotal()" required>
-			</p>
+			 <div class="row">
+					<div class="col-25">
+						<label for="email">Epost:</label>
+					</div>
+					<div class="col-75">
+							<input type="email" name="email" id="email" placeholder="eks. Ola@Nordmann.no" required>
+					</div>
+			 </div>
 
-			 <p>
-			   <label for="total"><b>Totalpris:</b></label><br>
-			   <input type="number" name="total" disabled id="total">
-			 </p>
-			    <input type="submit" value="Send bestilling">
+
+			 <div class="row">
+					 <div class="col-25">
+						 <label for="mobil">Mobilnr:</label>
+					 </div>
+					 <div class="col-75">
+							 <input type="text" name="mobil" minlength="8" maxlength="8" placeholder="eks. 42424242"required>
+					 </div>
+				</div>
+
+			<div class="row">
+					<div class="col-25">
+						<label for="adresse">Adresse:</label>
+					</div>
+					<div class="col-75">
+							<input type="text" name="adresse" id="adresse" placeholder="eks. Kongens gate 1" required>
+					</div>
+			 </div>
+
+			<div class="row">
+					<div class="col-25">
+						<label for="postnr">Postnummer:</label>
+					</div>
+					<div class="col-75">
+							<input type="text" name="postnr" minlength="4" maxlength="4"  placeholder="eks. 7030" required>
+					</div>
+			 </div>
+
+			<div class="row">
+					<div class="col-25">
+						<label for="by">By:</label>
+					</div>
+					<div class="col-75">
+					 		<input type="text" name="by" id="by" placeholder="eks. Trondheim" required>
+					</div>
+			 </div>
+
+			 <div class="row">
+ 					<div class="col-25">
+ 						<label for="levering">Levering av produktene:</label>
+ 					</div>
+					<div class="col-75">
+					<select name="levering" required>
+						<option value="">Pakken min skal......</option>
+							<option value="sende">Sendes til min adresse</option>
+								<option value="hente">Jeg hente selv</option>
+				 </select>
+ 			 </div>
+		 </div>
+
+		 <div class="row">
+		 	<div class="col-25">
+		 		<label for="valgProdukt">Velg produkt:</label>
+		 	</div>
+		 	<div class="col-75">
+		 		<select name="valgProdukt" required>
+					<option value="">Velg produkt her</option>
+		 			<option value="pute">Pute</option>
+		 			<option value="pledd">Pledd</option>
+		 			<option value="stol">Stol</option>
+		 			<option value="sengetoy">Sengetoy</option>
+		 		</select>
+		 	</div>
+		 </div>
+
+			 <div class="row">
+		 			<div class="col-25">
+		 				<label for="pris">Pris:</label>
+		 			</div>
+		 			<div class="col-75">
+		 			 <input type="number" name="pris" min="1" max="100" id="pris" onkeyup="getTotal()" required>
+		 			</div>
+		 	 </div>
+
+			<div class="row">
+					<div class="col-25">
+						<label for="antall">Antall:</label>
+					</div>
+					<div class="col-75">
+					 <input type="number" name="antall" min="1" max="100" id="antall" onkeyup="getTotal()" required>
+					</div>
+			 </div>
+
+			 <div class="row">
+		       <div class="col-25">
+		         <label for="total">Totalpris:</label>
+		       </div>
+		       <div class="col-75">
+		        <input type="number" name="total" disabled id="total">
+		       </div>
+				 </div>
+
+				 <input type="submit" value="Send bestilling">
 			    </form>
 					</div>
 
@@ -153,7 +213,7 @@
         <label for="epost">Epost adresse</label>
       </div>
       <div class="col-75">
-        <input type="text" name="epost" placeholder="epost@epost.com..." required>
+        <input type="email" name="epost" placeholder="epost@epost.com..." required>
       </div>
 		</div>
 
@@ -162,7 +222,8 @@
 		<label for="tema">Angående:</label>
 	</div>
 	<div class="col-75">
-		<select name="tema">
+		<select name="tema" required>
+			<option value="">Velg</option>
 			<option value="bestill">Bestilling</option>
 			<option value="frakt">Frakt</option>
 			<option value="service">Service</option>
@@ -176,7 +237,7 @@
 		<label for="melding">Skriv en melding</label>
 	</div>
 	<div class="col-75">
-		<textarea  name="melding" placeholder="Skriv noe.." style="height:200px"></textarea>
+		<textarea  name="melding" placeholder="Skriv noe.." required style="height:200px"></textarea>
 	</div>
 </div>
 
