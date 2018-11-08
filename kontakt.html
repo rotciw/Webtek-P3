@@ -9,11 +9,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Wallpaper & Ipsum </title>
-	<style>
-	ul{
-	list-style-type: none;
-	}
-	</style>
 </head>
 
 <body>
@@ -49,6 +44,7 @@
 
 			Vi har svart på de fleste spørsmål under <a href='omoss.html#exactline'>ofte stilte spørsmål</a>.
 		</p>
+		<!--Kontakinformasjon i en liste, stylingen er fjernet i css-->
 			<h4>
 			Gjerne ta kontakt med oss!</h4>
 		<ul>
@@ -58,9 +54,10 @@
 					<li>Lorem ipsumsvei 1</li>
 				<li>7041 Trondheim</li>
 			</ul>
-
+			<!--en div for å legge inn google maps, som hviser hvor bedriften ligger
+		selve kartet vises ved bruk av javascript maps.js-->
 			<h2>Google maps</h2>
-			<div id="map" style="width:100%;height:200px;"></div>
+			<div id="map"></div>
 
 			<p>
 				<br>
@@ -68,14 +65,14 @@
 			</p>
 
 			<div class="cont">
-					<h1 id='title'></h1>
+
 			        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="taxform">
-			          <h2>Form Bestillinger</h2>
+			          <h2 id="title">Form Bestillinger</h2>
 								<h3>Her kan du bestille produkter!</h3>
 
 			 <div class="row">
 					<div class="col-25">
-						<label for="email">Fullt Navn:</label>
+						<label for="email"> Fullt Navn:</label>
 					</div>
 					<div class="col-75">
 						<input type="text" name="name" id="name" placeholder="eks. Ola Nordmann" required>
@@ -84,7 +81,7 @@
 
 			 <div class="row">
 					<div class="col-25">
-						<label for="email">Epost:</label>
+						<label for="email"> Epost:</label>
 					</div>
 					<div class="col-75">
 							<input type="email" name="email" id="email" placeholder="eks. Ola@Nordmann.no" required>
@@ -94,16 +91,16 @@
 
 			 <div class="row">
 					 <div class="col-25">
-						 <label for="mobil">Mobilnr:</label>
+						 <label for="mobil"> Mobilnr:</label>
 					 </div>
 					 <div class="col-75">
-							 <input type="text" name="mobil" minlength="8" maxlength="8" placeholder="eks. 42424242"required>
+							 <input type="text" name="mobil" minlength="8" maxlength="8" placeholder="eks. 42424242" required>
 					 </div>
 				</div>
 
 			<div class="row">
 					<div class="col-25">
-						<label for="adresse">Adresse:</label>
+						<label for="adresse"> Adresse:</label>
 					</div>
 					<div class="col-75">
 							<input type="text" name="adresse" id="adresse" placeholder="eks. Kongens gate 1" required>
@@ -112,7 +109,7 @@
 
 			<div class="row">
 					<div class="col-25">
-						<label for="postnr">Postnummer:</label>
+						<label for="postnr"> Postnummer:</label>
 					</div>
 					<div class="col-75">
 							<input type="text" name="postnr" minlength="4" maxlength="4"  placeholder="eks. 7030" required>
@@ -121,7 +118,7 @@
 
 			<div class="row">
 					<div class="col-25">
-						<label for="by">By:</label>
+						<label for="by"> By:</label>
 					</div>
 					<div class="col-75">
 					 		<input type="text" name="by" id="by" placeholder="eks. Trondheim" required>
@@ -130,7 +127,7 @@
 
 			 <div class="row">
  					<div class="col-25">
- 						<label for="levering">Levering av produktene:</label>
+ 						<label for="levering"> Levering av produktene:</label>
  					</div>
 					<div class="col-75">
 					<select name="levering" required>
@@ -143,7 +140,7 @@
 
 		 <div class="row">
 		 	<div class="col-25">
-		 		<label for="valgProdukt">Velg produkt:</label>
+		 		<label for="valgProdukt"> Velg produkt:</label>
 		 	</div>
 		 	<div class="col-75">
 		 		<select name="valgProdukt" required>
@@ -158,7 +155,7 @@
 
 			 <div class="row">
 		 			<div class="col-25">
-		 				<label for="pris">Gjør et pristilbud:</label>
+		 				<label for="pris"> Gjør et pristilbud:</label>
 		 			</div>
 		 			<div class="col-75">
 		 			 <input type="number" name="pris" min="1" max="100" id="pris"  placeholder="x kr.per produkt" onkeyup="getTotal()" required>
@@ -194,11 +191,12 @@
 <h3>Still oss et spørsmål</h3>
 <p>Er det noe du lurer på?</p>
 <div class="cont">
+
 			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
 
 <div class="row">
       <div class="col-25">
-        <label for="navn">Navn:</label>
+        <label for="navn"> Navn:</label>
       </div>
       <div class="col-75">
         <input type="text" name="navn" placeholder="Ole..."  required>
@@ -207,7 +205,7 @@
 
 	<div class="row">
       <div class="col-25">
-        <label for="epost">Epost adresse</label>
+        <label for="epost"> Epost adresse</label>
       </div>
       <div class="col-75">
         <input type="email" name="epost" placeholder="epost@epost.com..." required>
@@ -216,7 +214,7 @@
 
 <div class="row">
 	<div class="col-25">
-		<label for="tema">Angående:</label>
+		<label for="tema"> Angående:</label>
 	</div>
 	<div class="col-75">
 		<select name="tema" required>
@@ -231,7 +229,7 @@
 
 <div class="row">
 	<div class="col-25">
-		<label for="melding">Skriv en melding</label>
+		<label for="melding"> Skriv en melding</label>
 	</div>
 	<div class="col-75">
 		<textarea  name="melding" placeholder="Skriv noe.." required style="height:200px"></textarea>
@@ -245,7 +243,6 @@
 <div class="row">
 	<input type="submit" value="Submit">
 </div>
-
 </form>
 
 </div>
