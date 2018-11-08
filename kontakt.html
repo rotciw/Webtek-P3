@@ -60,9 +60,6 @@
 			</ul>
 
 			<h2>Google maps</h2>
-			<p>Fungerer ikke 100% fordi at det mangler MYKEY  i javascript nederst,
-				som er en api key som man må få rettigheter til fra google,
-			(ved å bruke deres tjenester som en ekte bedrift)</p>
 			<div id="map" style="width:100%;height:200px;"></div>
 
 			<p>
@@ -161,10 +158,10 @@
 
 			 <div class="row">
 		 			<div class="col-25">
-		 				<label for="pris">Pris:</label>
+		 				<label for="pris">Gjør et pristilbud:</label>
 		 			</div>
 		 			<div class="col-75">
-		 			 <input type="number" name="pris" min="1" max="100" id="pris" onkeyup="getTotal()" required>
+		 			 <input type="number" name="pris" min="1" max="100" id="pris"  placeholder="x kr.per produkt" onkeyup="getTotal()" required>
 		 			</div>
 		 	 </div>
 
@@ -173,7 +170,7 @@
 						<label for="antall">Antall:</label>
 					</div>
 					<div class="col-75">
-					 <input type="number" name="antall" min="1" max="100" id="antall" onkeyup="getTotal()" required>
+					 <input type="number" name="antall" min="1" max="100" id="antall" placeholder="Hvor mange vil du ha?" onkeyup="getTotal()" required>
 					</div>
 			 </div>
 
@@ -269,7 +266,7 @@
 	<script src="js/myScript.js"></script>
 	<script src="js/maps.js"></script>
 	<script src="js/kalkulator.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXyqRh7vkI28nnMnq6dr0mJkUFmObHgck&callback=myMap"></script>
 
 </body>
 </html>
