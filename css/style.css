@@ -238,7 +238,6 @@ section p {
 
 .mySlides img {
   height: 500px;
-
 }
 .slideshow_pic {
   width: 100%;
@@ -500,18 +499,6 @@ footer form button:hover {
 
 /* Produkter */
 
-.back {
-  margin-top: 35px;
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  display: inline-block;
-  padding: 8px 16px;
-  /*   background-color: #f1f1f1; */
-  color: black;
-}
-
 .pil {
   width: 35px;
 }
@@ -548,6 +535,21 @@ footer form button:hover {
 }
 
 /* Produktside */
+
+/* Inspired by "Create a Product Page with Interactive Colors in HTML, CSS3 & jQuery" from https://designmodo.com/create-product-page/ */
+
+.back {
+  margin-top: 35px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+  padding: 8px 16px;
+  /*   background-color: #f1f1f1; */
+  color: black;
+}
+
 .container {
   width: 60%;
   margin-left: 20%;
@@ -673,7 +675,4 @@ footer form button:hover {
   margin-left: 50%;
   width: 60%;
   transform: translateX(-50%);
-}
-
-.caption {
 }

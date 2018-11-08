@@ -1,3 +1,5 @@
+/* inspired by "How TO - Lightbox" from https://www.w3schools.com/howto/howto_js_lightbox.asp */
+
 function openModal (n) {
   let i
   let Modal = document.getElementsByClassName('Modal')

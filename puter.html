@@ -1,110 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
+  <!--
+    Inspired by "Create a Product Page with Interactive Colors in HTML, CSS3 & jQuery" from https://designmodo.com/create-product-page/
+  -->
 
-<head>
-    <link rel="shortcut icon" href="img/favicon.ico" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/produktSide.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Wallpaper & Ipsum </title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wallpaper & Ipsum</title>
+  </head>
 
-<body>
-    <!-------------------------------------------------------------------------->
-    <!-- HEADER START-->
-    <!-------------------------------------------------------------------------->
+  <body>
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <!-- HEADER START -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
     <div class="header" id="header">
-        <div class="header-drop">
+      <div class="header-drop">
+        <img src="img/logo.png" alt="logo" class="logo" />
 
-            <img src="img/logo.png" alt="logo" class="logo" />
-
-            <!-- NAVBAR START -->
-            <div class="navbar" id="myNavbar">
-            </div>
-        </div>
-        <!-- NAVBAR END -->
+        <!-- NAVBAR START -->
+        <div class="navbar" id="myNavbar"></div>
+      </div>
+      <!-- NAVBAR END -->
     </div>
-    <!--HEADER END-->
-    <!-------------------------------------------------------------------------->
-    <!-- CENTER SECTION START-->
-    <!-------------------------------------------------------------------------->
+    <!-- HEADER END -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <!-- CENTER SECTION START -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
 
-    <a class='back' href="produkter.html" class="previous"><img class='pil' alt='pil' src="img/pil.png"> Produkter</a>
+    <a class="back" href="produkter.html" class="previous"
+      ><img class="pil" alt="pil" src="img/pil.png" /> Produkter</a
+    >
 
     <div class="container">
-        <div class="slideshow-container">
-            <div class="slides-container">
-                <div class="slides">
-                    <img src="img/products/sofaPute.jpg" alt='pute1' class="slideshow_pic" onclick="openModal(1)" onmouseover="zoomIn(1)"
-                        onmouseout="zoomOut(1)">
-                </div>
+      <div class="slideshow-container">
+        <div class="slides-container">
+          <div class="slides">
+            <img
+              src="img/products/sofaPute.jpg"
+              alt="pute1"
+              class="slideshow_pic"
+              onclick="openModal(1)"
+              onmouseover="zoomIn(1)"
+              onmouseout="zoomOut(1)"
+            />
+          </div>
 
-                <div class="slides">
-                    <img src="img/products/sofapute2.jpg" alt='pute2' class="slideshow_pic" onclick="openModal(2)" onmouseover="zoomIn(2)"
-                        onmouseout="zoomOut(2)">
-                </div>
+          <div class="slides">
+            <img
+              src="img/products/sofapute2.jpg"
+              alt="pute2"
+              class="slideshow_pic"
+              onclick="openModal(2)"
+              onmouseover="zoomIn(2)"
+              onmouseout="zoomOut(2)"
+            />
+          </div>
 
-                <div class="slides">
-                    <img src="img/products/sofapute4.jpg" alt='pute3' class="slideshow_pic" onclick="openModal(3)" onmouseover="zoomIn(3)"
-                        onmouseout="zoomOut(3)">
-                </div>
+          <div class="slides">
+            <img
+              src="img/products/sofapute4.jpg"
+              alt="pute3"
+              class="slideshow_pic"
+              onclick="openModal(3)"
+              onmouseover="zoomIn(3)"
+              onmouseout="zoomOut(3)"
+            />
+          </div>
 
-                <div class="slides">
-                    <img src="img/products/sofapute3.jpg" alt='pute4' class="slideshow_pic" onclick="openModal(4)" onmouseover="zoomIn(4)"
-                        onmouseout="zoomOut(4)">
-                </div>
-            </div>
-
-            <div class="thumb-Container">
-                <img class="thumbs" src="img/products/sofaPute.jpg" alt='pute1' onclick="currentSlide(1)" />
-                <img class="thumbs" src="img/products/sofaPute2.jpg" alt='pute2' onclick="currentSlide(2)" />
-                <img class="thumbs" src="img/products/sofaPute4.jpg" alt='pute3' onclick="currentSlide(3)" />
-                <img class="thumbs" src="img/products/sofaPute3.jpg" alt='pute4' onclick="currentSlide(4)" />
-            </div>
+          <div class="slides">
+            <img
+              src="img/products/sofapute3.jpg"
+              alt="pute4"
+              class="slideshow_pic"
+              onclick="openModal(4)"
+              onmouseover="zoomIn(4)"
+              onmouseout="zoomOut(4)"
+            />
+          </div>
         </div>
 
-        <!-- Right Column -->
-        <div class="info">
-            <!-- Product Description -->
-            <div class="product-description">
-                <h1>Putetrekk</h1>
-                <p class='text'>Myke og deilige putetrekk i høy kvalitet. Vi importerer putetrekk i alt fra silke til
-                    ull.</p>
-            </div>
-
+        <div class="thumb-Container">
+          <img
+            class="thumbs"
+            src="img/products/sofaPute.jpg"
+            alt="pute1"
+            onclick="currentSlide(1)"
+          />
+          <img
+            class="thumbs"
+            src="img/products/sofaPute2.jpg"
+            alt="pute2"
+            onclick="currentSlide(2)"
+          />
+          <img
+            class="thumbs"
+            src="img/products/sofaPute4.jpg"
+            alt="pute3"
+            onclick="currentSlide(3)"
+          />
+          <img
+            class="thumbs"
+            src="img/products/sofaPute3.jpg"
+            alt="pute4"
+            onclick="currentSlide(4)"
+          />
         </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="info">
+        <!-- Product Description -->
+        <div class="product-description">
+          <h1>Putetrekk</h1>
+          <p class="text">
+            Myke og deilige putetrekk i høy kvalitet. Vi importerer putetrekk i
+            alt fra silke til ull.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="modal-container">
-        <div class="Modal">
-            <img src="img/products/sofaPute.jpg" alt='pute1' class="Modal_pic" onclick="closeModal(1)">
-        </div>
+      <div class="Modal">
+        <img
+          src="img/products/sofaPute.jpg"
+          alt="pute1"
+          class="Modal_pic"
+          onclick="closeModal(1)"
+        />
+      </div>
 
-        <div class="Modal">
-            <img src="img/products/sofapute2.jpg" alt='pute2' class="Modal_pic" onclick="closeModal(2)">
-        </div>
+      <div class="Modal">
+        <img
+          src="img/products/sofapute2.jpg"
+          alt="pute2"
+          class="Modal_pic"
+          onclick="closeModal(2)"
+        />
+      </div>
 
-        <div class="Modal">
-            <img src="img/products/sofapute4.jpg" alt='pute3' class="Modal_pic" onclick="closeModal(3)">
-        </div>
+      <div class="Modal">
+        <img
+          src="img/products/sofapute4.jpg"
+          alt="pute3"
+          class="Modal_pic"
+          onclick="closeModal(3)"
+        />
+      </div>
 
-        <div class="Modal">
-            <img src="img/products/sofapute3.jpg" alt='pute4' class="Modal_pic" onclick="closeModal(4)">
-        </div>
+      <div class="Modal">
+        <img
+          src="img/products/sofapute3.jpg"
+          alt="pute4"
+          class="Modal_pic"
+          onclick="closeModal(4)"
+        />
+      </div>
     </div>
 
-    <!-------------------------------------------------------------------------->
+    <!--
+      ----------------------------------------------------------------------
+    -->
     <!-- FOOTER START -->
-    <!-------------------------------------------------------------------------->
-    <footer>
-        <div id="footer">
-
-        </div>
-    </footer>
-    <!--FOOTER END-->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <footer><div id="footer"></div></footer>
+    <!-- FOOTER END -->
     <!-- JAVASCRIPT -->
 
     <script src="js/reusable_navbar_and_footer.js"></script>
@@ -112,6 +194,5 @@
     <script src="js/prodSlide.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/hoverZoom.js"></script>
-</body>
-
+  </body>
 </html>
