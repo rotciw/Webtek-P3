@@ -1,0 +1,29 @@
+.previous {
+      color: black;
+      text-decoration: none;
+      margin-top: 35px;
+      margin-left: 25px;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 25px;
+      display: inline-block;
+}
+
+.newsImage {
+  height: 400px;
+  width: 800px;
+}
+
+.fakeimg {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
+}
+
+.title {
+  font-size: 40px;
+  margin: 20px;
+
+}
