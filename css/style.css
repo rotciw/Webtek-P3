@@ -245,7 +245,7 @@ section p {
   object-fit: cover;
 }
 
-/*Parallax effect*/
+/*Parallax effect Inspired by w3schools.com*/
 .parallax-products {
   /* The image used */
   background-image: url('../img/products/sofapute4.jpg');
