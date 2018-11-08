@@ -14,8 +14,6 @@ body {
   overflow: hidden;
   width: 100%;
   height: 5.5em;
-  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -155,7 +153,7 @@ section p {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container-index {
   overflow: hidden;
   /*max-width: 1000px;*/
   position: relative;
@@ -216,10 +214,8 @@ section p {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
@@ -242,7 +238,7 @@ section p {
 
 .mySlides img {
   height: 500px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
 }
 .slideshow_pic {
   width: 100%;
@@ -300,6 +296,16 @@ section p {
   width: 60%; /*Resulting in 20% on the right as well*/
   text-align: center;
   float: center;
+}
+
+@media screen and (max-width: 750px) {
+  .parallax-supplier {
+    font-size: 3em;
+  }
+
+  .parallax-products {
+    font-size: 3em;
+  }
 }
 
 /*BOTTOM SECTION
