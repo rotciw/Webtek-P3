@@ -307,6 +307,15 @@ section p {
   }
 }
 
+/*Bilde av Lorem ipsum eier*/
+.loremBilde {
+    display: inline-block;
+}
+
+/*Fjerner styling av lister*/
+ul{
+	list-style-type: none;
+	}
 /*FORM CSS
 -------------------------------------------------------*/
 * {
