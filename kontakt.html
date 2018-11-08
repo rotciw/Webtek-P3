@@ -3,6 +3,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="utf-8">
@@ -52,10 +53,10 @@
 			Gjerne ta kontakt med oss!</h4>
 		<ul>
 			<li>Epost: Lorem@inc.com</li>
-				<li>Telefon: 88800888</li>
+				<li>Telefon: 42424242</li>
 				<li>Adresse: </li>
-					<li>Kongens Kongens gate 1</li>
-				<li>7030 Trondheim</li>
+					<li>Lorem ipsumsvei 1</li>
+				<li>7041 Trondheim</li>
 			</ul>
 
 			<h2>Google maps</h2>
@@ -64,6 +65,12 @@
 			(ved å bruke deres tjenester som en ekte bedrift)</p>
 			<div id="map" style="width:100%;height:200px;"></div>
 
+			<p>
+				<br>
+				<br>
+			</p>
+
+			<div class="cont">
 					<h1 id='title'></h1>
 			        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="taxform">
 			          <h2>Form Bestillinger</h2>
@@ -98,57 +105,92 @@
 				 <input type="radio" name="levering" value="hente"> Jeg skal hente pakken<br>
 			 </p>
 			 <p>
-				<label for="produkt"><b>Produkt:</b></label><br>
-				<input type="text" name="prid" id="prod">
+			 <label for="valgProdukt"><b>Velg produkt:</b></label><br>
+			 <input type="radio" name="produkt" value="pute"  required > Putetrekk<br>
+			 <input type="radio" name="produkt" value="pledd"> Pledd<br>
+			 <input type="radio" name="produkt" value="stol"> Stol<br>
+			 <input type="radio" name="produkt" value="sengetoy"> Sengetøy<br>
+		 	</p>
+
+			 <p>
+				<label for="produktPris"><b>Pris:</b></label><br>
+				<input type="number" name="antall" min="1" max="100" id="pris" onkeyup="getTotal()" required>
+
 			</p>
 		 <p>
 			  <label for="antall"><b>Antall:</b></label><br>
-			  <input type="number" name="antall" min="1" max="100" onkeyup="getTax()" required>
+			  <input type="number" name="antall" min="1" max="100" id="antall" onkeyup="getTotal()" required>
 			</p>
 
-
-			<!-- Herfra bare for hvis vi skal Regne pris på produktene -->
-
-		<p>
-			   <label for="wealth"><b>Pris på produktet?:</b></label><br>
-			   <input type="number" name="wealth" id="wealth" min="0" onkeyup="getTax()" required>
-			 </p>
 			 <p>
-
 			   <label for="total"><b>Totalpris:</b></label><br>
 			   <input type="number" name="total" disabled id="total">
 			 </p>
 			    <input type="submit" value="Send bestilling">
 			    </form>
+					</div>
 
 
+<!-------------------------------------------------------------------------->
+<!-- Form for Spørsmål -->
+<!-------------------------------------------------------------------------->
 <h3>Still oss et spørsmål</h3>
-
+<p>Er det noe du lurer på?</p>
+<div class="cont">
 			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
 
-<p>
-			Navn:<br>
-			<input type="text" name="name"><br>
-</p>
-<p>
-			E-post adresse:<br>
-			<input type="text" name="mail"><br>
-</p>
-<p>
-			Angående:<br>
-			<input type="radio" name="kategori" value="bestill"> Bestilling<br>
-			<input type="radio" name="kategori" value="prod"> Produkter<br>
-			<input type="radio" name="kategori" value="service"> Service<br>
-			<input type="radio" name="kategori" value="annet"> Annet<br>
-	</p>
-			<p>
-			Hva lurer du på?<br>
-			<input type="text" name="comment" size="100px" ><br><br>
-			</p>
-			<input type="submit" value="Send">
-			<input type="reset" value="Reset">
+<div class="row">
+      <div class="col-25">
+        <label for="navn">Navn:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="navn" placeholder="Ole..."  required>
+      </div>
+    </div>
+
+	<div class="row">
+      <div class="col-25">
+        <label for="epost">Epost adresse</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="epost" placeholder="epost@epost.com..." required>
+      </div>
+		</div>
+
+<div class="row">
+	<div class="col-25">
+		<label for="tema">Angående:</label>
+	</div>
+	<div class="col-75">
+		<select name="tema">
+			<option value="bestill">Bestilling</option>
+			<option value="frakt">Frakt</option>
+			<option value="service">Service</option>
+			<option value="annet">Annet</option>
+		</select>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label for="melding">Skriv en melding</label>
+	</div>
+	<div class="col-75">
+		<textarea  name="melding" placeholder="Skriv noe.." style="height:200px"></textarea>
+	</div>
+</div>
+
+
+<div class="row">
+	<input type="reset" value="Reset">
+</div>
+<div class="row">
+	<input type="submit" value="Submit">
+</div>
+
 </form>
 
+</div>
 </div>
 	</section>
 <!-------------------------------------------------------------------------->
@@ -164,17 +206,9 @@
 
 	<script src="js/reusable_navbar_and_footer.js"></script>
 	<script src="js/myScript.js"></script>
-<!-- JAVASCRIPT  FOR GOOGLE MAPS-->
-	<script>
-			function myMap() {
-			var mapProp= {
-		    center:new google.maps.LatLng(51.508742,-0.120850),
-		    zoom:5,
-			};
-			var map=new google.maps.Map(document.getElementById("map"),mapProp);
-			}
-	</script>
+	<script src="js/maps.js"></script>
+	<script src="js/kalkulator.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>
