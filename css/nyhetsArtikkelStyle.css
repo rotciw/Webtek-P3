@@ -1,3 +1,5 @@
+/*Tilbake knapp*/
+
 .previous {
       color: black;
       text-decoration: none;
@@ -8,6 +10,8 @@
       font-size: 25px;
       display: inline-block;
 }
+
+/*Bilde og bilde container*/
 
 .newsImage {
   height: 400px;
@@ -22,8 +26,14 @@
   box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
 }
 
+/*Gjør tittel og tekst finere*/
+
 .title {
   font-size: 40px;
   margin: 20px;
 
+}
+
+p {
+  padding: 5px;
 }

@@ -1,3 +1,5 @@
+/*Lager de to nyhetsradene*/
+
 .leftcolumn {
   float: left;
   width: 50%;
@@ -7,6 +9,22 @@
   float: right;
   width: 50%;
 }
+
+/*Nyhetskortene*/
+
+.card {
+  border: 2px dotted black;
+  margin: 15px;
+  padding: 10px;
+  background-color: #aac677;
+  height: 400px;
+}
+
+.card:hover {
+  border: 2px solid black;
+}
+
+/*Bilde container og bilder*/
 
 .fakeimg {
   -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
@@ -19,16 +37,7 @@
   width: 100%;
 }
 
-.card {
-  border: 2px dotted black;
-  margin: 15px;
-  padding: 10px;
-  background-color: #aac677;
-}
-
-.card:hover {
-  border: 2px solid black;
-}
+/*Gjør underoverskrift, tekst og linker finere*/
 
 h2 {
   text-decoration: underline;
@@ -41,4 +50,15 @@ p {
 a:link, a:visited, a:hover, a:active {
   color: black;
   text-decoration: none;
+}
+
+/*Styling the date*/
+
+#date {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 10px;
 }
