@@ -27,27 +27,28 @@
 /*Bilde container og bilder*/
 
 .fakeimg {
+  height: 200px;
+}
+
+.newsImage {
+  height: 200px;
+  width: 325px;
   -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
   -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
   box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
 }
 
-.newsImage {
-  height: 200px;
-  width: 100%;
-}
-
 /*Gjør underoverskrift, tekst og linker finere*/
 
-h2 {
+.undertitle {
   text-decoration: underline;
 }
 
-p {
+.newsText {
   padding: 5px;
 }
 
-a:link, a:visited, a:hover, a:active {
+.articlelink:link, .articlelink:visited, .articlelink:hover, .articlelink:active {
   color: black;
   text-decoration: none;
 }
