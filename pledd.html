@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="no">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/produktSide.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Wallpaper & Ipsum </title>
+</head>
+
+<body>
+    <!-------------------------------------------------------------------------->
+    <!-- HEADER START-->
+    <!-------------------------------------------------------------------------->
+    <div class="header" id="header">
+        <div class="header-drop">
+
+            <img src="img/logo.png" alt="logo" class="logo" />
+
+            <!-- NAVBAR START -->
+            <div class="navbar" id="myNavbar">
+            </div>
+        </div>
+        <!-- NAVBAR END -->
+    </div>
+    <!--HEADER END-->
+    <!-------------------------------------------------------------------------->
+    <!-- CENTER SECTION START-->
+    <!-------------------------------------------------------------------------->
+
+    <a class='back' href="produkter.html" class="previous"><img class='pil' src="img/pil.png"> Produkter</a>
+
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slides-container">
+                <div class="slides">
+                    <img src="img/products/brettet.jpg" class="slideshow_pic" onclick="openModal(1)" onmouseover="zoomIn(1)"
+                        onmouseout="zoomOut(1)">
+                </div>
+
+                <div class="slides">
+                    <img src="img/products/hengende.jpg" class="slideshow_pic" onclick="openModal(2)" onmouseover="zoomIn(2)"
+                        onmouseout="zoomOut(2)">
+                </div>
+
+                <div class="slides">
+                    <img src="img/products/carpetcarpet.jpeg" class="slideshow_pic" onclick="openModal(3)" onmouseover="zoomIn(3)"
+                        onmouseout="zoomOut(3)">
+                </div>
+
+            </div>
+
+            <div class="thumb-Container">
+                <img class="thumbs" src="img/products/brettet.jpg" onclick="currentSlide(1)" />
+                <img class="thumbs" src="img/products/hengende.jpg" onclick="currentSlide(2)" />
+                <img class="thumbs" src="img/products/carpetcarpet.jpeg" onclick="currentSlide(3)" />
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="info">
+            <!-- Product Description -->
+            <div class="product-description">
+                <h1>Pledd</h1>
+                <p class='text'>Myke og deilige pledd i høy kvalitet. Vi importerer pledd i alt fra silke til
+                    ull.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="Modal">
+            <img src="img/products/brettet.jpg" class="Modal_pic" onclick="closeModal(1)">
+        </div>
+
+        <div class="Modal">
+            <img src="img/products/hengende.jpg" class="Modal_pic" onclick="closeModal(2)">
+        </div>
+
+        <div class="Modal">
+            <img src="img/products/carpetcarpet.jpeg" class="Modal_pic" onclick="closeModal(3)">
+        </div>
+
+    </div>
+
+    <!-------------------------------------------------------------------------->
+    <!-- FOOTER START -->
+    <!-------------------------------------------------------------------------->
+    <footer>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!--FOOTER END-->
+    <!-- JAVASCRIPT -->
+
+    <script src="js/reusable_navbar_and_footer.js"></script>
+    <script src="js/myScript.js"></script>
+    <script src="js/prodSlide.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/hoverZoom.js"></script>
+</body>
+
+</html>
