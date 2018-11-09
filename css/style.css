@@ -308,15 +308,20 @@ section p {
 }
 
 /*Bilde av Lorem ipsum eier*/
-.loremBilde {
+#loremBilde {
     display: inline-block;
+}
+/*Styling for div som skal inneholde kartet*/
+#map {
+    width:100%;
+    height:200px;
 }
 
 /*Fjerner styling av lister*/
 ul{
 	list-style-type: none;
 	}
-/*FORM CSS
+/*FORM CSS, inspirert fra w3schools.com - How to responsive form
 -------------------------------------------------------*/
 * {
     box-sizing: border-box;
