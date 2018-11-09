@@ -247,7 +247,7 @@ section p {
 /*Parallax effect Inspired by w3schools.com*/
 .parallax-products {
   /* The image used */
-  background-image: url('../img/products/sofapute4.jpg');
+  background-image: url('../img/products/sofaPute4.jpg');
   width: 100%;
   /* Full height */
   height: 200px;
@@ -308,20 +308,15 @@ section p {
 }
 
 /*Bilde av Lorem ipsum eier*/
-#loremBilde {
+.loremBilde {
     display: inline-block;
-}
-/*Styling for div som skal inneholde kartet*/
-#map {
-    width:100%;
-    height:200px;
 }
 
 /*Fjerner styling av lister*/
 ul{
 	list-style-type: none;
 	}
-/*FORM CSS, inspirert fra w3schools.com - How to responsive form
+/*FORM CSS
 -------------------------------------------------------*/
 * {
     box-sizing: border-box;
@@ -766,4 +761,111 @@ footer form button:hover {
   margin-left: 50%;
   width: 60%;
   transform: translateX(-50%);
+}
+
+/*Lager de to nyhetsradene*/
+
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 50%;
+}
+
+/*Nyhetskortene*/
+
+.card {
+  border: 2px dotted black;
+  margin: 15px;
+  padding: 10px;
+  background-color: #aac677;
+  height: 400px;
+}
+
+.card:hover {
+  border: 2px solid black;
+}
+
+/*Bilde container og bilder*/
+
+.fakeimg {
+  height: 200px;
+}
+
+.newsImage {
+  height: 200px;
+  width: 325px;
+  -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
+}
+
+/*Gjør underoverskrift, tekst og linker finere*/
+
+.undertitle {
+  text-decoration: underline;
+}
+
+.newsText {
+  padding: 5px;
+}
+
+.articlelink:link, .articlelink:visited, .articlelink:hover, .articlelink:active {
+  color: black;
+  text-decoration: none;
+}
+
+/*Styling the date*/
+
+#date {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 10px;
+}
+
+
+/*Tilbake knapp*/
+
+.previous {
+      color: black;
+      text-decoration: none;
+      margin-top: 35px;
+      margin-left: 25px;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 25px;
+      display: inline-block;
+}
+
+/*Bilde og bilde container*/
+
+.articleImage {
+  height: 400px;
+  width: 800px;
+}
+
+.imgcontainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
+}
+
+/*Gjør tittel og tekst finere*/
+
+.title {
+  font-size: 40px;
+  margin: 20px;
+
+}
+
+.newsText {
+  padding: 5px;
 }
