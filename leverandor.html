@@ -1,76 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
+  <head>
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/leverandører.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wallpaper & Ipsum</title>
+  </head>
 
-<head>
-	<link rel="shortcut icon" href="img/favicon.ico" sizes="16x16">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/leverandører.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Wallpaper & Ipsum </title>
-</head>
+  <body>
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <!-- HEADER START -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <div class="header" id="header">
+      <div class="header-drop">
+        <img src="img/logo.png" alt="logo" class="logo" />
 
-<body>
-	<!-------------------------------------------------------------------------->
-	<!-- HEADER START-->
-	<!-------------------------------------------------------------------------->
-	<div class="header" id="header">
-		<div class="header-drop">
+        <!-- NAVBAR START -->
+        <div class="navbar" id="myNavbar"></div>
+      </div>
+      <!-- NAVBAR END -->
+    </div>
+    <!-- HEADER END -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <!-- CENTER SECTION START -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <div class="slideshow"></div>
 
-			<img src="img/logo.png" alt="logo" class="logo" />
+    <section>
+      <div class="container"><h1>Leverandører</h1></div>
+      <div class="suppliers">
+        <a class="productLink" href="http://www.alessandrobini.com/">
+          <figure class="supplierThumb">
+            <img
+              src="img/suppliers/alessandro-bini-logo-header.png"
+              alt="Alessandro Bini"
+              class="suppThumb"
+            />
+            <figcaption class="caption">
+              Selger alt av textiler til hjemmet og er flinke på alt fra bommul
+              til silke.
+            </figcaption>
+          </figure>
+        </a>
+        <a class="productLink" href="https://www.luumtextiles.com/">
+          <figure class="supplierThumb">
+            <img src="img/suppliers/luum.png" alt="Luum" class="suppThumb" />
+            <figcaption class="caption">
+              Selger alt av textiler til hjemmet og er flinke på alt fra bommul
+              til silke.
+            </figcaption>
+          </figure>
+        </a>
+        <a class="productLink" href="https://www.penelopehope.com/">
+          <figure class="supplierThumb">
+            <img
+              src="img/suppliers/Penelope Hope.png"
+              alt="Penelope Hope"
+              class="suppThumb"
+            />
+            <figcaption class="caption">
+              Selger alt av textiler til hjemmet og er flinke på alt fra bommul
+              til silke.
+            </figcaption>
+          </figure>
+        </a>
+        <a class="productLink" href="http://www.rubelli.com/en/">
+          <figure class="supplierThumb">
+            <img
+              src="img/suppliers/Rubelli.png"
+              alt="Rubelli"
+              class="suppThumb"
+            />
+            <figcaption class="caption">
+              Selger alt av textiler til hjemmet og er flinke på alt fra bommul
+              til silke.
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <!-- FOOTER START -->
+    <!--
+      ----------------------------------------------------------------------
+    -->
+    <footer><div id="footer"></div></footer>
+    <!-- FOOTER END -->
+    <!-- JAVASCRIPT -->
 
-			<!-- NAVBAR START -->
-			<div class="navbar" id="myNavbar">
-			</div>
-		</div>
-		<!-- NAVBAR END -->
-	</div>
-	<!--HEADER END-->
-	<!-------------------------------------------------------------------------->
-	<!-- CENTER SECTION START-->
-	<!-------------------------------------------------------------------------->
-	<div class="slideshow">
-
-	</div>
-
-	<section>
-		<div class="container">
-			<h1>Leverandører </h1>
-		</div>
-		<div class=suppliers>
-			<figure class=supplierThumb>
-				<img src="img/suppliers/alessandro-bini-logo-header.png" alt="logo" class="suppThumb" />
-				<figcaption class='caption'>Selger alt av textiler til hjemmet og er flinke på alt fra bommul til silke.</figcaption>
-			</figure>
-			<figure class=supplierThumb>
-				<img src="img/suppliers/luum.png" alt="logo" class="suppThumb" />
-				<figcaption class='caption'>Selger alt av textiler til hjemmet og er flinke på alt fra bommul til silke.</figcaption>
-			</figure>
-			<figure class=supplierThumb>
-				<img src="img/suppliers/Penelope Hope.png" alt="logo" class="suppThumb" />
-				<figcaption class='caption'>Selger alt av textiler til hjemmet og er flinke på alt fra bommul til silke.</figcaption>
-			</figure>
-			<figure class=supplierThumb>
-				<img src="img/suppliers/Rubelli.png" alt="logo" class="suppThumb" />
-				<figcaption class='caption'>Selger alt av textiler til hjemmet og er flinke på alt fra bommul til silke.</figcaption>
-			</figure>
-		</div>
-	</section>
-	<!-------------------------------------------------------------------------->
-	<!-- FOOTER START -->
-	<!-------------------------------------------------------------------------->
-	<footer>
-		<div id="footer">
-
-		</div>
-	</footer>
-	<!--FOOTER END-->
-	<!-- JAVASCRIPT -->
-
-	<script src="js/reusable_navbar_and_footer.js"></script>
-	<script src="js/myScript.js"></script>
-</body>
-
+    <script src="js/reusable_navbar_and_footer.js"></script>
+    <script src="js/responsive_header.js"></script>
+  </body>
 </html>
