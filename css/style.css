@@ -305,6 +305,17 @@ section p {
   }
 }
 
+
+@media screen and (max-width: 450px) {
+  .parallax-supplier {
+    font-size: 2em;
+  }
+
+  .parallax-products {
+    font-size: 2em;
+  }
+}
+
 /*Bilde av Lorem ipsum eier*/
 .loremBilde {
     display: inline-block;
