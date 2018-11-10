@@ -139,7 +139,6 @@ body {
 
   width: 60%; /*Resulting in 20% on the right as well*/
   text-align: center;
-  float: center;
 }
 
 section p {
@@ -294,7 +293,6 @@ section p {
   margin-left: 20%; /*20% from the left*/
   width: 60%; /*Resulting in 20% on the right as well*/
   text-align: center;
-  float: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -798,6 +796,7 @@ footer form button:hover {
 
 .card:hover {
   border: 2px solid black;
+}
 
 /*Image container and image*/
 
