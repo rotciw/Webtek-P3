@@ -11,6 +11,7 @@ function currentSlide (n) {
 function showSlides (n) {
   let i
   let slides = document.getElementsByClassName('slides')
+  let thumb = document.getElementsByClassName("thumbs")
   console.log(slides)
   if (n > slides.length) {
     slideIndex = 1
@@ -20,6 +21,8 @@ function showSlides (n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none'
+    thumb[i].style.opacity = "1"
   }
   slides[slideIndex - 1].style.display = 'block'
+  thumb[slideIndex - 1].style.opacity = "0.3"
 }
