@@ -1,4 +1,6 @@
-/*Tilbake knapp*/
+/*NEWS ARTICLE STYLE START*/
+
+/*Back button*/
 
 .previous {
       color: black;
@@ -11,14 +13,16 @@
       display: inline-block;
 }
 
-/*Bilde og bilde container*/
+/*Image and image container*/
 
 .articleImage {
-  height: 400px;
-  width: 800px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .imgcontainer {
+  width: 100%;
+  height: 80%;
   margin-top: 30px;
   margin-bottom: 30px;
   -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
@@ -26,7 +30,7 @@
   box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
 }
 
-/*Gjør tittel og tekst finere*/
+/*Makes the title and text prettier*/
 
 .title {
   font-size: 40px;
@@ -37,3 +41,5 @@
 .newsText {
   padding: 5px;
 }
+
+/*NEWS ARTICLE STYLE END*/
