@@ -14,8 +14,6 @@ body {
   overflow: hidden;
   width: 100%;
   height: 5.5em;
-  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -155,7 +153,7 @@ section p {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container-index {
   overflow: hidden;
   /*max-width: 1000px;*/
   position: relative;
@@ -216,10 +214,8 @@ section p {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
@@ -242,17 +238,16 @@ section p {
 
 .mySlides img {
   height: 500px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 .slideshow_pic {
   width: 100%;
   object-fit: cover;
 }
 
-/*Parallax effect*/
+/*Parallax effect Inspired by w3schools.com*/
 .parallax-products {
   /* The image used */
-  background-image: url('../img/products/sofapute4.jpg');
+  background-image: url('../img/products/sofaPute4.jpg');
   width: 100%;
   /* Full height */
   height: 200px;
@@ -301,6 +296,102 @@ section p {
   text-align: center;
   float: center;
 }
+
+@media screen and (max-width: 750px) {
+  .parallax-supplier {
+    font-size: 3em;
+  }
+
+  .parallax-products {
+    font-size: 3em;
+  }
+}
+
+/*Bilde av Lorem ipsum eier*/
+.loremBilde {
+    display: inline-block;
+}
+
+/*Fjerner styling av lister*/
+ul{
+	list-style-type: none;
+	}
+/*FORM CSS
+-------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=number],input[type=email],select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 14px 20px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=reset] {
+    background-color:#6fa045;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:0 auto;
+}
+
+input[type=submit]:hover,input[type=reset]:hover  {
+    background-color: #45a049;
+}
+
+
+.cont {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout -  Får kolonnene til å legges opp til hverandre når skjermen er under 600px  */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 
 /*BOTTOM SECTION
 -------------------------------------------------------*/
@@ -494,18 +585,6 @@ footer form button:hover {
 
 /* Produkter */
 
-.back {
-  margin-top: 35px;
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  display: inline-block;
-  padding: 8px 16px;
-  /*   background-color: #f1f1f1; */
-  color: black;
-}
-
 .pil {
   width: 35px;
 }
@@ -515,7 +594,7 @@ footer form button:hover {
 }
 
 .thumb {
-  width: 200px;
+  width: 140px;
 }
 
 .productThumb {
@@ -542,6 +621,21 @@ footer form button:hover {
 }
 
 /* Produktside */
+
+/* Inspired by "Create a Product Page with Interactive Colors in HTML, CSS3 & jQuery" from https://designmodo.com/create-product-page/ */
+
+.back {
+  margin-top: 35px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+  padding: 8px 16px;
+  /*   background-color: #f1f1f1; */
+  color: black;
+}
+
 .container {
   width: 60%;
   margin-left: 20%;
@@ -669,5 +763,131 @@ footer form button:hover {
   transform: translateX(-50%);
 }
 
-.caption {
+/*NEWS STYLE START*/
+
+/*Rows*/
+
+.row {
+  width: 100%;
+  height: 100%;
 }
+
+/*The columns*/
+
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 50%;
+}
+
+/*Newscards*/
+
+.card {
+  border: 2px dotted black;
+  margin: 15px;
+  padding: 10px;
+  background-color: #aac677;
+  height: 10%;
+  width: 90%;
+}
+
+.card:hover {
+  border: 2px solid black;
+}
+
+/*Image container and image*/
+
+.fakeimg {
+  height: 50%;
+  width: 100%;
+}
+
+.newsImage {
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
+}
+
+/*Makes the undertitle, text and links prettier*/
+
+.undertitle {
+  text-decoration: underline;
+}
+
+.newsText {
+  padding: 5px;
+}
+
+.articlelink:link, .articlelink:visited, .articlelink:hover, .articlelink:active {
+  color: black;
+  text-decoration: none;
+}
+
+/*Makes the two rows stack when the browser width is less than 750px*/
+
+@media screen and (max-width: 750px) {
+    .leftcolumn {
+      float: none;
+      margin: auto;
+      width: 100%;
+    }
+    .rightcolumn {
+      float: none;
+      margin: auto;
+      width: 100%;
+    }
+}
+
+/*NEWS STYLE ENDS*/
+
+/*NEWS ARTICLE STYLE START*/
+
+/*Back button*/
+
+.previous {
+      color: black;
+      text-decoration: none;
+      margin-top: 35px;
+      margin-left: 25px;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 25px;
+      display: inline-block;
+}
+
+/*Image and image container*/
+
+.articleImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imgcontainer {
+  width: 100%;
+  height: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  -moz-box-shadow:  0px 6px 10px rgba(0,0,0, 0.2);
+  box-shadow: 0px 6px 10px rgba(0,0,0, 0.2);
+}
+
+/*Makes the title and text prettier*/
+
+.title {
+  font-size: 40px;
+  margin: 20px;
+
+}
+
+.newsText {
+  padding: 5px;
+}
+
+/*NEWS ARTICLE STYLE END*/
